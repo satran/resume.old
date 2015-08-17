@@ -14,7 +14,7 @@ import (
 var (
 	textdir  = flag.String("text", "text", "directory containing text")
 	tmplfile = flag.String("tmpl", "base.tmpl", "template file name")
-	outfile  = flag.String("out", "resume.html", "file to generate the resume to")
+	outfile  = flag.String("out", "index.html", "file to generate the resume to")
 )
 
 func main() {
