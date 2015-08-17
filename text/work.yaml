@@ -1,27 +1,15 @@
 - 
-  from: 2007
-  to: 2008
-  position: Linux Consultant
-  company: SQL Star
-  place: Chennai, India
-  keywords: [RedHat Enterprise Linux, Perl scripting, System Administration]
+  from: 2014
+  to: 2015
+  position: Full Stack Developer
+  company: OptioPay
+  place: Berlin, Germany
 
-  summary: Evangelised RedHat Enterprise Linux and trained candidates for RHCE. I also managed a few RedHat Enterprise Servers. 
+  summary: Building a payment gateway using a micro-service architecture and Go 
 
-  detailed: I enrolled as a student learning RedHat Enterprise Linux and was offered the position on completing the course. Here I trained candidates for RedHat certificate courses and also administered the servers. We had four servers, three of them running RedHat Enterprise Linux 4 and one Windows Server 2003. One of them housed Oracle 9g and another Oracle 10g. In the year I was employed I had received a 4 star(the maximum) rating in the courses I taught.
+  keywords: [go, micro-services, kafka, event-sourcing]
 
-- 
-  from: 2008
-  to: 2011
-  position: Head of IT
-  company: Anglo Singapore International School
-  place: Bangkok, Thailand
-
-  summary: Architect and built a School Management System
-
-  keywords: [Python, MySQL, PHP, Networking]
-
-  detailed: I joined the School to help computerise manual processes. I transformed a system using MS Excel and MS Word to a web application which could serve multiple users and that could be accessed remotely. Here I built the network and servers that would be used by the application. I also configured a Network file sharing system using Samba, a Firewall using iptables, DHCP servers, fault tolerant servers using RAID. All the servers were running on GNU/Linux. The in house application was an ERP solution to manage students and staff. It also provided analysis of student grades and automation of many processes. I started with Perl, moved to PHP and eventually to Python. 
+  detailed: I work as a team member of senior developers to architect and build a micro-service oriented system payment gateway (a bit more than just a payment gateway). The key areas that I concentrated were on the book keeping and the HTTP server. Building distributed systems can be quite challenging and here I have come to learn through experience the good and bad parts of micro services.
 
 - 
   from: 2011
@@ -35,16 +23,29 @@
   keywords: [C, Python, JavaScript, MongoDB, Redis, PostgreSQL, RabbitMQ]
 
   detailed: We developed an Intelligent Character Recognition System. The application had two parts, the user facing end was written using HTML5 and the image recognition and intelligent correction was done using C, C++ and Python. I led the team to build a distributed and flexible system. With the inherent shortcomings of Python for distributed systems we sought refuge in RabbitMQ for queuing and C, C++ for speed. Intelligent correction is one important area in this project and I created a very robust and intelligent word correction system in C using Tokyo Cabinet as the backend database. MongoDB, Redis, PostgreSQL were the databases used for the system. I also architected the user facing application built with JavaScript and Backbone.js.  
+
+- 
+  from: 2008
+  to: 2011
+  position: Head of IT
+  company: Anglo Singapore International School
+  place: Bangkok, Thailand
+
+  summary: Architect and built a School Management System
+
+  keywords: [Python, MySQL, PHP, Networking]
+
+  detailed: I joined the School to help computerise manual processes. I transformed a system using MS Excel and MS Word to a web application which could serve multiple users and that could be accessed remotely. Here I built the network and servers that would be used by the application. I also configured a Network file sharing system using Samba, a Firewall using iptables, DHCP servers, fault tolerant servers using RAID. All the servers were running on GNU/Linux. The in house application was an ERP solution to manage students and staff. It also provided analysis of student grades and automation of many processes. I started with Perl, moved to PHP and eventually to Python. 
   
 - 
-  from: 2014
-  to: 2015
-  position: Full Stack Developer
-  company: OptioPay
-  place: Berlin, Germany
+  from: 2007
+  to: 2008
+  position: Linux Consultant
+  company: SQL Star
+  place: Chennai, India
+  keywords: [RedHat Enterprise Linux, Perl scripting, System Administration]
 
-  summary: Building a payment gateway using a micro-service architecture and Go 
+  summary: Evangelised RedHat Enterprise Linux and trained candidates for RHCE. I also managed a few RedHat Enterprise Servers. 
 
-  keywords: [go, micro-services, kafka, event-sourcing]
+  detailed: I enrolled as a student learning RedHat Enterprise Linux and was offered the position on completing the course. Here I trained candidates for RedHat certificate courses and also administered the servers. We had four servers, three of them running RedHat Enterprise Linux 4 and one Windows Server 2003. One of them housed Oracle 9g and another Oracle 10g. In the year I was employed I had received a 4 star(the maximum) rating in the courses I taught.
 
-  detailed: I work as a team member of senior developers to architect and build a micro-service oriented system payment gateway (a bit more than just a payment gateway). The key areas that I concentrated were on the book keeping and the HTTP server. Building distributed systems can be quite challenging and here I have come to learn through experience the good and bad parts of micro services.
