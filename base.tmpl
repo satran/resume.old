@@ -19,6 +19,8 @@
         body {
             max-width: 800px;
             line-height: 1.5;
+	    border-top: .5em solid black;
+	    border-bottom: .5em solid black;
         }
         
         .container {
@@ -33,8 +35,7 @@
         }
         
         .personal {
-            border-bottom: 1px solid #bbb;
-            background: #efefef;
+            border-bottom: 1px solid black;
         }
         .personal .name{
             font-size: 2em;
@@ -55,8 +56,11 @@
         .item{
             margin: 1em 0;
             padding: .5em;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid black;
         }
+    	.item:last-child{
+	    border-bottom: none;
+    	}
         .item>.title{
             font-weight: bold;
         }
