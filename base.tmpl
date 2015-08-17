@@ -1,0 +1,144 @@
+<!doctype=html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <title>{{ .Personal.Name }}</title>
+    <style>
+            html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font-weight: normal;
+            vertical-align: baseline;
+            background: transparent;
+        }
+        
+        body {
+            max-width: 800px;
+            line-height: 1.5;
+        }
+        
+        .container {
+            padding: 1em;
+        }
+        
+        .container>.title{
+            text-transform: uppercase;
+            font-size: 1.2em;
+            text-align: right;
+            font-weight: bold;
+        }
+        
+        .personal {
+            border-bottom: 1px solid #bbb;
+            background: #efefef;
+        }
+        .personal .name{
+            font-size: 2em;
+        }
+        .personal a{
+            color: black;
+        }
+        .personal .about {
+            padding-top: .5em;
+            font-style: italic;
+        }
+        
+        .info li {
+            display: inline;
+            font-size: .7em;
+        }
+        
+        .item{
+            margin: 1em 0;
+            padding: .5em;
+            border-bottom: 1px solid #ccc;
+        }
+        .item>.title{
+            font-weight: bold;
+        }
+        
+        .item .date{
+            font-style: italic;
+            font-size: .8em;
+        }
+        
+        .work .summary{
+            font-style: italic;
+        }
+        .work .detailed {
+            margin-top: 1em;
+            padding: .5em 0;
+            border-top: 1px dashed black;
+        }
+        
+        .keywords li {
+            display: inline-block;
+            background: #efefef;
+            font-size: .7em;
+            text-transform: uppercase;
+            padding: .1em .3em;
+        }
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="personal container">
+      <h1 class="name">{{.Personal.Name}}</h1>
+      <ul class="info">
+	<li class="website">
+	  <a href="{{.Personal.Website}}">{{.Personal.Website}}</a>
+	</li>
+	<li class="Email">
+	  <a href="mailto:{{.Personal.Email}}">{{.Personal.Email}}</a>
+	</li>
+	<li class="phone">
+	  {{.Personal.Telephone}}
+	</li>
+      </ul>
+
+      <h3 class="about">{{.Personal.About}}</h3>
+    </div>
+
+    <div class="work-experiences container">
+      <h2 class="title">Work Experience</h2>
+      {{ range .WorkExperience }}
+      <div class="work item">
+	<h3 class="position title">{{.Position}}</h3>
+	<h4 class="company">{{.Company}}</h4>
+	<p class="date"><span class="from">{{.From}}</span> - <span class="to">{{.To}}</span></p>
+	<p class="summary">{{.Summary}}</p>
+	<p class="detailed">{{.Detailed}}</p>
+	<ul class="keywords">
+	  {{ range .KeyWords }}
+	  <li>{{.}}</li>
+	  {{ end }}
+	</ul>
+      </div>
+      {{ end }}
+    </div>
+    
+    <div class="qualifications container">
+      <h2 class="title">Education</h2>
+      {{ range .Education }}
+      {{ if .Course}}
+      <div class="education item">
+	<h3 class="title">{{.Course}}</h3>
+	<p class="date"><span class="from">{{.From}}</span> - <span class="to">{{.To}}</span></p>
+      </div>
+      {{ else }}
+      <div class="education item">
+	<h3 class="title">{{.Degree}} in {{.Subject}}</h3>
+	<h4 class="college">{{.College}}</h4>
+	<p class="date"><span class="from">{{.From}}</span> - <span class="to">{{.To}}</span></p>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+    
+  </body>
+</html>
